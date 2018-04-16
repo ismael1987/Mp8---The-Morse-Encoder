@@ -22,7 +22,6 @@ public class Encoder {
         System.out.println(letters);
         String collect = letters.stream()
                 .map(charc -> tomorse(charc))
-               // .map(s -> send())
                 .collect(Collectors.joining(""));
         System.out.printf(collect);
         return  collect;
